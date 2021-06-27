@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PLP - Hybrid Server Client Rendered Website - WITH Scroll Restoration</title>
+  <meta charset="UTF-8"/>
+</head>
+
+<body>
+<header>
+  <img src="/img/logo.png" alt="Server Rendered HTML"/>
+</header>
+
+<main>
+  <ul class="products">
+    <li class="product--loading">Loading</li>
+    <!-- Populated using JS -->
+  </ul>
+</main>
+
+<footer>
+  Connect with us on our social networks!
+</footer>
+
+<template id="product-card-template">
+  <li data-product-id="Populated by JS">
+    <div class="product-card">
+      <div class="product-card__image-container">
+        <a href="./pdp.html" class="product-card__link">
+          <img class="product-card__image"
+               src="Populated with JS"
+               alt="Populated with JS">
+        </a>
+      </div>
+      <div class="product-card__name">
+        <a href="./pdp.html" class="product-card__link product-card__link--name"><!-- Populated with JS --></a>
+      </div>
+      <div class="product-card__price"><!-- Populated with JS --></div>
+      <div class="product-card__configurations">
+        <div class="product-card__configuration configuration--red"></div>
+        <div class="product-card__configuration configuration--white"></div>
+        <div class="product-card__configuration configuration--blue"></div>
+        <div class="product-card__configuration configuration--green"></div>
+        <div class="product-card__configuration configuration--yellow"></div>
+      </div>
+      <div class="product-card__configurations">
+        <div class="product-card__configuration">S</div>
+        <div class="product-card__configuration">M</div>
+        <div class="product-card__configuration">L</div>
+        <div class="product-card__configuration">XL</div>
+      </div>
+      <div class="product-card__action">
+        <button class="product-card__action--add">Add to Cart</button>
+      </div>
+    </div>
+  </li>
+</template>
+
+<link rel="stylesheet" href="./css/styles.css"/>
+<script type="module" src="./js/script.js" defer></script>
+</body>
+</html>
